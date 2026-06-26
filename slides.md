@@ -94,7 +94,7 @@ mdc: true
 </div>
 
 <div class="panel blue-panel mt-5">
-105-120 分钟：把 Python 转成校园项目表达，小程序、打卡、投票、二维码都能套同一套话。
+100-120 分钟：用一题完整开放题，把小程序、打卡、投票、二维码讲成校园项目。
 </div>
 
 ---
@@ -583,28 +583,164 @@ for i in range(2, n + 1, 2):
 
 ---
 
-# 开放题万能三问
+# 2025 真题怎么拆
 
 <div class="grid-3">
   <div class="model-card">
-    <strong>1. 有什么功能？</strong>
-    <p>先讲刚需，再讲特色。</p>
-    <p class="small">通知、报名、打卡、投票、资料、影音。</p>
+    <strong>1. 功能设计</strong>
+    <p>先答基础功能，再答特色功能。</p>
+    <p class="small">通知、报名、资料、打卡、投票、影音。</p>
   </div>
   <div class="model-card">
-    <strong>2. 怎么推广？</strong>
-    <p>先内测，再线上线下推广，最后复盘迭代。</p>
+    <strong>2. 推广流程</strong>
+    <p>按时间顺序说，不要只列渠道。</p>
     <p class="small">班群、公众号、海报二维码、广播站、活动引流。</p>
   </div>
   <div class="model-card">
-    <strong>3. 设计原理？</strong>
-    <p>讲需求、轻量、共建、持续更新。</p>
+    <strong>3. 板块原理</strong>
+    <p>选一个最有亮点的板块讲深。</p>
     <p class="small">不用下载、扫码即用、反馈优化。</p>
   </div>
 </div>
 
 <div class="panel mt-5">
-任何“小程序、视频号、打卡系统、投票系统”都可以套这三问。
+回答顺序固定：<strong>有什么</strong> → <strong>怎么做</strong> → <strong>为什么这样设计</strong>。
+</div>
+
+---
+
+# 校园项目三件套
+
+<div class="grid-3">
+  <div class="model-card">
+    <strong>二维码入口</strong>
+    <p>解决“怎么进来”的问题。</p>
+    <p class="small">海报、班群、活动现场、公众号都放同一个入口。</p>
+  </div>
+  <div class="model-card">
+    <strong>打卡统计</strong>
+    <p>解决“谁参加了”的问题。</p>
+    <p class="small">学号去重，统计个人次数、班级人数、未打卡名单。</p>
+  </div>
+  <div class="model-card">
+    <strong>投票排行</strong>
+    <p>解决“怎么互动”的问题。</p>
+    <p class="small">一人一票，自动计票，显示结果，带动同学使用。</p>
+  </div>
+</div>
+
+<div class="panel blue-panel mt-5">
+三件套的底层其实就是 P03 的判断、P05 的分类、P06 的统计。
+</div>
+
+---
+
+# 模拟开放题
+
+<div class="panel blue-panel">
+学校计划做一个“校园活动打卡系统”，用于运动会、社团招新、讲座签到等活动。请你回答：
+</div>
+
+<div class="grid-3 mt-5">
+  <div class="model-card">
+    <strong>1. 功能</strong>
+    <p>这个系统可以有哪些功能？</p>
+  </div>
+  <div class="model-card">
+    <strong>2. 推广</strong>
+    <p>你会怎么让同学愿意使用？</p>
+  </div>
+  <div class="model-card">
+    <strong>3. 原理</strong>
+    <p>你最重视哪个模块，为什么？</p>
+  </div>
+</div>
+
+<div class="panel gold-panel mt-5">
+先让她口头说 1 分钟，不要一上来就看答案。
+</div>
+
+<!--
+讲法：这页开始进入“演练”。让她先自己答，你只记录缺了哪块：功能、流程、原理、Python 关系。
+-->
+
+---
+
+# 标准答案：功能怎么说
+
+<div class="grid-2">
+  <div class="panel">
+    <h3>基础功能</h3>
+    <ul>
+      <li>活动列表：展示运动会、社团招新、讲座等活动。</li>
+      <li>扫码打卡：同学扫二维码提交学号和姓名。</li>
+      <li>查重提醒：同一个学号不能重复计算。</li>
+      <li>结果统计：统计总人数、各班人数、个人次数。</li>
+    </ul>
+  </div>
+  <div class="panel green-panel">
+    <h3>加分功能</h3>
+    <ul>
+      <li>班级排行榜：提高参与感。</li>
+      <li>未打卡名单：方便班委提醒。</li>
+      <li>活动积分：打卡后获得积分或徽章。</li>
+      <li>反馈入口：收集同学建议。</li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel mt-5">
+答功能时不要只说“很多功能”，要按“基础 + 加分”分层说。
+</div>
+
+---
+
+# 标准答案：推广怎么说
+
+<div class="grid-3">
+  <div class="model-card">
+    <strong>上线前</strong>
+    <p>找班委、社团骨干内测，检查打卡是否重复、统计是否正确。</p>
+  </div>
+  <div class="model-card">
+    <strong>上线时</strong>
+    <p>班群、公众号、公告栏、活动现场放二维码，广播站提醒。</p>
+  </div>
+  <div class="model-card">
+    <strong>上线后</strong>
+    <p>用排行榜、积分、小奖品提高参与度，再根据反馈迭代。</p>
+  </div>
+</div>
+
+<div class="panel blue-panel mt-5">
+推广题一定按时间顺序说：<strong>内测</strong> → <strong>发布</strong> → <strong>运营</strong>。
+</div>
+
+---
+
+# 标准答案：原理怎么说
+
+<div class="grid-2">
+  <div class="panel">
+    <h3>我最重视：扫码打卡模块</h3>
+    <p>
+      因为它是系统的核心入口。同学扫码后提交学号，程序用学号判断是否已经打卡，
+      如果没有记录就新增，如果已经记录就提示重复。
+    </p>
+  </div>
+  <div class="panel gold-panel">
+    <h3>连接 Python 基础</h3>
+    <ul>
+      <li><code>input()</code>：录入学号、姓名、班级。</li>
+      <li><code>if else</code>：判断是否重复打卡。</li>
+      <li><code>for</code>：统计各班人数或个人次数。</li>
+      <li><code>print()</code>：输出名单和统计结果。</li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel mt-5">
+老师问“和编程有什么关系”时，就把项目拆回 P01-P06 里的基础模型。
 </div>
 
 ---
@@ -653,6 +789,8 @@ voted = []
 def vote(student_id, choice):
     if student_id in voted:
         print("不能重复投票")
+    elif choice not in votes:
+        print("选项不存在")
     else:
         votes[choice] += 1
         voted.append(student_id)
@@ -674,18 +812,81 @@ def vote(student_id, choice):
 
 ---
 
-# 1 分钟口述稿
+# 面试追问应对
+
+<table class="cheat-table">
+  <thead>
+    <tr>
+      <th>老师可能问</th>
+      <th>回答抓手</th>
+      <th>一句话答案</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>怎么防止重复打卡？</td>
+      <td>唯一标识</td>
+      <td>用学号作为唯一标识，程序先判断学号是否已经存在。</td>
+    </tr>
+    <tr>
+      <td>如果同学不愿意用怎么办？</td>
+      <td>降低门槛 + 激励</td>
+      <td>扫码即用，不要求下载；再用排行榜、积分、小奖品增加参与感。</td>
+    </tr>
+    <tr>
+      <td>这个系统有什么学校价值？</td>
+      <td>效率 + 宣传</td>
+      <td>减少人工统计，还能沉淀活动数据，方便后续校园宣传。</td>
+    </tr>
+    <tr>
+      <td>你入校后能做什么？</td>
+      <td>小范围试点</td>
+      <td>我可以先从社团活动或班级打卡做试点，再根据反馈迭代。</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+# 现场练习：把答案说完整
+
+<div class="grid-2">
+  <div class="panel blue-panel">
+    <h3>第一遍：30 秒</h3>
+    <p>只说功能：活动列表、扫码打卡、防重复、统计结果。</p>
+  </div>
+  <div class="panel">
+    <h3>第二遍：60 秒</h3>
+    <p>加上推广流程：内测、二维码宣传、排行榜运营、反馈迭代。</p>
+  </div>
+  <div class="panel">
+    <h3>第三遍：90 秒</h3>
+    <p>加上设计原理和 Python 关系：输入、判断、循环、输出。</p>
+  </div>
+  <div class="panel gold-panel">
+    <h3>最后检查</h3>
+    <p>有没有说清楚“为什么学校需要它”，不要只说技术。</p>
+  </div>
+</div>
+
+---
+
+# 90 秒完整口述稿
 
 <div class="panel blue-panel">
-如果要我用 Python 帮学校做一个校园服务小项目，我会先选择一个真实场景，比如活动打卡或节目投票。程序里可以用学号作为唯一标识，避免重复打卡或重复投票；再用判断语句处理不同情况，用循环或字典统计人数、次数和排名。
+如果要设计校园活动打卡系统，我会先从运动会、社团招新、讲座签到这些真实场景出发。功能上，它可以展示活动列表，让同学扫码提交学号和姓名；后台用学号作为唯一标识，判断是否重复打卡，再统计总人数、各班参与人数、个人打卡次数和未打卡名单。
 </div>
 
 <div class="panel mt-4">
-推广上，我会先找班委和社团骨干内测，修复问题后生成二维码，放到班级群、公告栏、公众号和活动现场。后续再收集同学反馈，持续更新功能。这样既能方便同学，也能帮助学校做活动管理和宣传。
+推广上，我会先找班委和社团骨干内测，确认扫码、查重和统计没有问题。正式使用时，把二维码放到班级群、公告栏、公众号和活动现场，再配合排行榜、积分或小奖品提高参与度。后续根据同学反馈继续优化。
+</div>
+
+<div class="panel mt-4">
+这个项目和 Python 基础也能对应起来：录入信息是输入，防止重复是 <code>if else</code> 判断，统计人数和次数可以用循环完成，最后输出名单和结果。它的价值是减少人工统计，也能帮助学校做活动管理和校园宣传。
 </div>
 
 <div class="small mt-4">
-背诵方法：场景 + 代码思路 + 推广流程 + 学校价值。
+背诵方法：真实场景 + 功能设计 + 推广流程 + Python 关系 + 学校价值。
 </div>
 
 ---
@@ -788,4 +989,3 @@ def vote(student_id, choice):
     <img src="./assets/slides/p06.jpg" alt="P06 累加题原图" />
   </div>
 </div>
-
