@@ -211,7 +211,7 @@ print("结果是：", score)
 
 # P01：turtle 画图固定模板
 
-<div class="grid-2">
+<div class="grid-code-result">
   <div>
 
 ```python
@@ -227,6 +227,12 @@ for i in range(8):
 ```
 
   </div>
+  <div class="image-frame turtle-result-frame">
+    <img src="./assets/slides/p01-result.svg" alt="P01 turtle 代码运行结果：绿色背景上的红色正八边形" />
+  </div>
+</div>
+
+<div class="grid-2 mt-4">
   <div class="panel">
     <h3>这题考什么</h3>
     <ul>
@@ -236,10 +242,11 @@ for i in range(8):
       <li>正八边形每次转 <code>45</code> 度，因为 <code>360 / 8 = 45</code>。</li>
     </ul>
   </div>
-</div>
-
-<div class="panel gold-panel mt-4">
-变式：正六边形怎么改？只改两个地方：<code>range(6)</code> 和 <code>right(60)</code>。
+  <div class="panel gold-panel">
+    <h3>变式怎么改</h3>
+    <p>正六边形只改两个地方：<code>range(6)</code> 和 <code>right(60)</code>。</p>
+    <p class="small">规律：边数是多少，<code>range</code> 就是多少；转角是 <code>360 / 边数</code>。</p>
+  </div>
 </div>
 
 <!--
@@ -773,6 +780,43 @@ def clock_in(student_id, name):
 
 ---
 
+# 具体例子：社团招新集章
+
+<div class="grid-2">
+  <div class="panel blue-panel">
+    <h3>真实场景</h3>
+    <ul>
+      <li>篮球社、舞蹈社、科创社、摄影社各放一个二维码。</li>
+      <li>同学每了解一个社团，就扫码完成一次打卡。</li>
+      <li>系统记录学号、姓名、班级、社团名称和打卡时间。</li>
+      <li>打卡 5 个不同社团，可以获得“探索达人”徽章或抽奖机会。</li>
+    </ul>
+  </div>
+  <div>
+
+```python
+records = []
+
+student_id = input("请输入学号：")
+club = input("请输入社团名称：")
+record = student_id + "-" + club
+
+if record in records:
+    print("你已经打卡过这个社团")
+else:
+    records.append(record)
+    print("打卡成功")
+```
+
+  </div>
+</div>
+
+<div class="panel gold-panel mt-4">
+口述抓手：用“学号 + 社团名称”判断是否重复；用积分、徽章、抽奖让同学愿意多逛几个社团。
+</div>
+
+---
+
 # 项目表达模板：活动投票
 
 <div class="grid-2">
@@ -822,22 +866,27 @@ def vote(student_id, choice):
     <tr>
       <td>怎么防止重复打卡？</td>
       <td>唯一标识</td>
-      <td>用学号作为唯一标识，程序先判断学号是否已经存在。</td>
+      <td>用学号判断。同一个活动里，系统先查这个学号是否已经记录过，记录过就提示不能重复。</td>
     </tr>
     <tr>
       <td>如果同学不愿意用怎么办？</td>
       <td>降低门槛 + 激励</td>
-      <td>扫码即用，不要求下载；再用排行榜、积分、小奖品增加参与感。</td>
+      <td>扫码即用，不要求下载；再加排行榜、积分、徽章或小奖品，提高参与感。</td>
+    </tr>
+    <tr>
+      <td>数据错了怎么办？</td>
+      <td>确认 + 更正</td>
+      <td>提交前让同学确认信息；后台保留学号、时间、活动记录，老师或班委可以更正。</td>
+    </tr>
+    <tr>
+      <td>为什么用二维码，不让大家下载 App？</td>
+      <td>门槛低</td>
+      <td>校园活动常常是临时场景，扫码更快，海报、班群、摊位都能放入口。</td>
     </tr>
     <tr>
       <td>这个系统有什么学校价值？</td>
-      <td>效率 + 宣传</td>
-      <td>减少人工统计，还能沉淀活动数据，方便后续校园宣传。</td>
-    </tr>
-    <tr>
-      <td>你入校后能做什么？</td>
-      <td>小范围试点</td>
-      <td>我可以先从社团活动或班级打卡做试点，再根据反馈迭代。</td>
+      <td>效率 + 改进</td>
+      <td>减少人工统计，自动看到参与人数、班级情况和活动热度，方便后续改进。</td>
     </tr>
   </tbody>
 </table>

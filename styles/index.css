@@ -169,6 +169,13 @@
   gap: 16px;
 }
 
+.grid-code-result {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 18px;
+  align-items: start;
+}
+
 .tag {
   display: inline-flex;
   align-items: center;
@@ -234,6 +241,10 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.turtle-result-frame {
+  height: 170px;
 }
 
 .cheat-table {

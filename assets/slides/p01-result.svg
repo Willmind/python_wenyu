@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">P01 turtle 运行结果</title>
+  <desc id="desc">绿色背景上用红色线条画出的正八边形，右上角保留一个小海龟光标。</desc>
+  <rect width="640" height="360" fill="#008000" />
+  <g transform="translate(280 56) scale(2.05)">
+    <polyline
+      points="
+        0,0
+        50,0
+        85.36,35.36
+        85.36,85.36
+        50,120.71
+        0,120.71
+        -35.36,85.36
+        -35.36,35.36
+        0,0
+      "
+      fill="none"
+      stroke="#f03b2f"
+      stroke-width="4"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+    <g transform="translate(0 0)">
+      <ellipse cx="0" cy="0" rx="9" ry="5.5" fill="#1f2937" />
+      <circle cx="9" cy="0" r="3.4" fill="#1f2937" />
+      <circle cx="-7" cy="-5" r="2.2" fill="#1f2937" />
+      <circle cx="-7" cy="5" r="2.2" fill="#1f2937" />
+      <circle cx="2" cy="-6" r="2" fill="#1f2937" />
+      <circle cx="2" cy="6" r="2" fill="#1f2937" />
+    </g>
+  </g>
+</svg>
