@@ -86,7 +86,8 @@ Slidev 的构建产物是 `dist/`，不是 `public/`。如果 Vercel 报 `No Out
 ```text
 .
 ├── slides.md                 # 课件主体
-├── style.css                 # 课件样式
+├── styles/index.css          # 全局课件样式
+├── global-top.vue            # Slidev 底部工具栏常显样式
 ├── assets/slides/            # P01-P06 和 2025 题型背景图片
 ├── vercel.json               # Vercel 构建输出配置
 ├── package.json              # Slidev 脚本和依赖

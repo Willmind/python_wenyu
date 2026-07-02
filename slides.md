@@ -10,10 +10,6 @@ drawings:
 mdc: true
 ---
 
-<style>
-@import "./style.css";
-</style>
-
 <div class="hero">
   <div>
     <div class="tag">自主招生 Python / 2 小时</div>
